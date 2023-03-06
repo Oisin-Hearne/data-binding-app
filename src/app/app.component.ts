@@ -7,12 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   count: number = 0;
+  isHidden: boolean = true;
 
   incrementCount() {
     this.count++;
   }
 
   imageDblClick() {
-    
+    this.isHidden = !this.isHidden;
   }
 }
