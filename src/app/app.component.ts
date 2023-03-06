@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'data-binding-app';
+  count: number = 0;
+
+  incrementCount() {
+    this.count++;
+  }
+
+  imageDblClick() {
+    
+  }
 }
